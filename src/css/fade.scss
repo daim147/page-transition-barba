@@ -1,0 +1,24 @@
+/* Fade out current container */
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave-active {
+  transition: opacity 1.2s var(--easing);
+}
+
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: opacity 1.2s var(--easing);
+}
+
+.fade-enter-to {
+  opacity: 1;
+}

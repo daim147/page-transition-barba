@@ -1,0 +1,33 @@
+/* Transition with cover screen */
+.cover-leave {
+  .transition {
+    transform: translateY(100%);
+  }
+}
+
+.cover-leave-to {
+  .transition {
+    transform: translateY(0%);
+  }
+}
+
+.cover-enter {
+  .transition {
+    transform: translateY(0%);
+  }
+}
+
+.cover-enter-to {
+  .transition {
+    transform: translateY(-100%);
+  }
+}
+
+.cover-leave-active,
+.cover-enter-active {
+  .transition {
+    transition: all 1s var(--easing); //every item that animate transition is must to run properly
+  }
+
+  transition: all 1s var(--easing);
+}
