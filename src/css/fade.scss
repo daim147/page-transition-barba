@@ -4,7 +4,7 @@
 }
 
 .fade-leave-active {
-  transition: opacity 1.2s var(--easing);
+  transition: opacity 1s var(--easing);
 }
 
 .fade-leave-to {
@@ -15,10 +15,10 @@
   opacity: 0;
 }
 
-.fade-enter-active {
-  transition: opacity 1.2s var(--easing);
-}
-
 .fade-enter-to {
   opacity: 1;
+}
+
+.fade-enter-active {
+  transition: opacity 1s var(--easing);
 }

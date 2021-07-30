@@ -36,8 +36,18 @@ barba.init({
       to: {
         namespace: ["fader"],
       },
-      leave() {},
-      enter() {},
+      afterLeave(data) {
+        console.log(data.current, data.next, "Leave");
+      },
+      leave(data) {
+        console.log(data.current, data.next, "Leave2");
+      },
+      enter(data) {
+        console.log(data.current, data.next, "Enter2");
+      },
+      afterEnter(data) {
+        console.log(data.current, data.next, "Enter");
+      },
     },
     {
       name: "clip",
@@ -45,8 +55,12 @@ barba.init({
       to: {
         namespace: ["cliper"],
       },
-      leave() {},
-      enter() {},
+      leave(data) {
+        console.log(data.current, data.next, "leave");
+      },
+      enter(data) {
+        console.log(data.current, data.next, "Enter");
+      },
     },
     {
       name: "cover",
